@@ -4,80 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Blog</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 1rem;
-            text-align: center;
-        }
-        nav {
-            margin: 1rem 0;
-            text-align: center;
-        }
-        nav a {
-            margin: 0 1rem;
-            text-decoration: none;
-            color: #333;
-        }
-        .container {
-            width: 80%;
-            margin: 2rem auto;
-            background-color: #fff;
-            padding: 2rem;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .post {
-            margin-bottom: 2rem;
-        }
-        .post h2 {
-            margin-bottom: 0.5rem;
-        }
-        .post p {
-            line-height: 1.6;
-        }
-        footer {
-            text-align: center;
-            padding: 1rem;
-            background-color: #333;
-            color: #fff;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-    </style>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 </head>
 <body>
-    <header>
-        <h1>My Blog</h1>
-    </header>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="/show-blogs">My Blog</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/add-blog">Add Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
-    <div class="container">
-        <div class="post">
-            <h2>Blog Post Title 1</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque leo in ipsum suscipit, ut facilisis dui convallis.</p>
-        </div>
-        <div class="post">
-            <h2>Blog Post Title 2</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque leo in ipsum suscipit, ut facilisis dui convallis.</p>
-        </div>
-        <div class="post">
-            <h2>Blog Post Title 3</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque leo in ipsum suscipit, ut facilisis dui convallis.</p>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-8">
+                <h1>Welcome to My Blog</h1>
+                <p>Explore and enjoy reading various blogs.</p>
+            </div>
         </div>
     </div>
-    <footer>
-        &copy; 2024 My Blog
-    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-9pQyEXYB8wuzaT82cy2Xt7rvkQ7i55rH1mx3bCEoYEj2ItYTNRei0X2Duoqj9Z9m" crossorigin="anonymous"></script>
 </body>
 </html>
